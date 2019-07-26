@@ -14,18 +14,17 @@ function prueba(numero){
    let resultado = ""
    
     if (multiploDeTres(numero)){
-        resultado = "Fazz";
+        resultado = " Fazz";
     }
     if (multiploDeCinco(numero)){
-        resultado = resultado + "Bizz";
+        resultado = resultado + " Bizz";
     }
     if (multiploDeSiete(numero)){
-        resultado = resultado + "Barr";
+        resultado = resultado + " Barr";
     }
-   if (resultado = ""){
+   if (resultado === ""){
        return numero
    }
-    
-    return resultado
+        return resultado.trimLeft()
     }
  
